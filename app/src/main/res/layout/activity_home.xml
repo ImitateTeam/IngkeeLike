@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/home_tab_rg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_actvity_tab_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home_rbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:drawableBottom="@drawable/home_rbtn_selector"/>
+
+        <RadioButton
+            android:id="@+id/mine_rbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_marginBottom="10dp"
+            android:drawableBottom="@drawable/mine_rbtn_selector"/>
+    </RadioGroup>
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/home_tab_rg"/>
+    <Button
+        android:id="@+id/live_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/live_button_selector"
+        />
+    <FrameLayout
+        android:id="@+id/container_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line_view"/>
+</RelativeLayout>

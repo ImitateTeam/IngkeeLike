@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">IngkeeLike</string>
+
+    <string name="home_label">首页</string>
+
+    <string name="login_label">登录页</string>
 </resources>
