@@ -12,15 +12,20 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ui.main.activity.MainActivity"
             android:label="@string/home_label">
+
+        </activity>
+
+        <activity android:name=".ui.login.activity.LoginActivity"
+            android:label="@string/login_label" >
+
+        </activity>
+        <activity android:name=".ui.home.activity.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".ui.login.activity.LoginActivity"
-            android:label="@string/login_label" />
     </application>
 
 </manifest>
