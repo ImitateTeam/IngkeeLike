@@ -3,4 +3,25 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="home_actvity_tab_height">58dp</dimen>
+
+    <!--search-->
+    <dimen name="search_user_gender_margin_l">5.0dip</dimen>
+    <dimen name="searchbar_padding_l_r">8.0dip</dimen>
+    <dimen name="user_item_margin_l_r">10.0dip</dimen>
+    <dimen name="searchbar_padding_t_b">13.0dip</dimen>
+    <dimen name="search_live_title_height">46.0dip</dimen>
+    <dimen name="user_item_portrait_margin_l">16.0dip</dimen>
+    <dimen name="user_item_portrait_width">38.0dip</dimen>
+    <dimen name="search_cate_title_margin_l">19.0dip</dimen>
+    <dimen name="searchbar_height">32.0dip</dimen>
+    <dimen name="titlebar_back_width">36.0dip</dimen>
+    <dimen name="titlebar_container_height">48.0dip</dimen>
+    <dimen name="round_radius">50.0dip</dimen>
+    <dimen name="search_user_item_height">64.0dip</dimen>
+    <dimen name="search_text_width">290.0dip</dimen>
+    <dimen name="tv_search_live_look_count">12.0dip</dimen>
+    <dimen name="tv_search_live_cate_more_size">13.0dip</dimen>
+    <dimen name="tv_cate_title_size">15.0dip</dimen>
+    <dimen name="tv_search_live_user_name_size">16.0dip</dimen>
+    <dimen name="diveder_line_height">1.0px</dimen>
 </resources>

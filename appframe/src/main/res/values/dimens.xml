@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="loading_padding_l_r">15.0dip</dimen>
+    <dimen name="loading_title_padding_l_r">20.0dip</dimen>
+    <dimen name="loading_height">52.0dip</dimen>
+</resources>

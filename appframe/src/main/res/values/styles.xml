@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="global_cell">
+        <item name="android:background">@drawable/bg_listselector</item>
+        <item name="android:paddingLeft">@dimen/loading_padding_l_r</item>
+        <item name="android:paddingRight">@dimen/loading_padding_l_r</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/loading_height</item>
+        <item name="android:minHeight">@dimen/loading_height</item>
+    </style>
+
+    <style name="global_cell_title">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>
