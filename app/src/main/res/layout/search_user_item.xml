@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/search_user_item_height">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/user_portrait"
+        android:layout_width="@dimen/user_item_portrait_width"
+        android:layout_height="@dimen/user_item_portrait_width"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/user_item_portrait_margin_l"
+        fresco:fadeDuration="0"
+        fresco:placeholderImage="@drawable/default_head"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="true" />
+
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4.0dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/button_choose_add" />
+
+    <ImageView
+        android:id="@+id/img_living"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4.0dip"
+        android:layout_toLeftOf="@id/img_add"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/search_button_living" />
+
+    <RelativeLayout
+        style="@style/inke_wrap_wrap"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/user_item_margin_l_r"
+        android:layout_marginRight="@dimen/user_item_margin_l_r"
+        android:layout_toLeftOf="@id/img_living"
+        android:layout_toRightOf="@id/user_portrait">
+
+        <LinearLayout
+            android:id="@+id/name_gender"
+            style="@style/inke_match_wrap"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_nick"
+                style="@style/inke_cell_useritem_username"
+                android:maxWidth="142.0dip"
+                android:text="@string/userhome_nickname_default" />
+
+            <ImageView
+                android:id="@+id/img_gender"
+                style="@style/inke_cell_useritem_gender_img"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/img_level"
+                style="@style/inke_cell_useritem_level_img"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_desc"
+            style="@style/inke_contributor_count"
+            android:layout_alignLeft="@id/name_gender"
+            android:layout_below="@id/name_gender" />
+    </RelativeLayout>
+
+    <View
+        style="@style/inke_bg_line"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

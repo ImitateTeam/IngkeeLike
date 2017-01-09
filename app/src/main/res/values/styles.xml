@@ -8,4 +8,147 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="inke_match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="inke_match_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="inke_wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="inke_tv_13_16" parent="@style/inke_wrap_wrap">
+        <item name="android:textSize">@dimen/tv_search_live_user_name_size</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="inke_cell_useritem_username" parent="@style/inke_tv_13_16">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxWidth">150.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="inke_cell_useritem_gender_img">
+        <item name="android:layout_width">14.0sp</item>
+        <item name="android:layout_height">14.0sp</item>
+        <item name="android:layout_marginLeft">@dimen/search_user_gender_margin_l</item>
+        <item name="android:src">@drawable/global_icon_female</item>
+        <item name="android:minWidth">14.0sp</item>
+    </style>
+
+    <style name="inke_cell_useritem_level_img">
+        <item name="android:layout_width">31.0sp</item>
+        <item name="android:layout_height">14.0sp</item>
+        <item name="android:layout_marginLeft">@dimen/search_user_gender_margin_l</item>
+        <item name="android:src">@drawable/rank_1</item>
+        <item name="android:minWidth">31.0sp</item>
+    </style>
+
+    <style name="inke_tv_14_12" parent="@style/inke_wrap_wrap">
+        <item name="android:textSize">@dimen/tv_search_live_look_count</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="inke_contributor_count" parent="@style/inke_tv_14_12">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxWidth">150.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="inke_bg_line">
+        <item name="android:background">@color/light_gray</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/diveder_line_height</item>
+    </style>
+
+    <style name="inke_titlebar_container">
+        <item name="android:background">@color/inke_standard</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/titlebar_container_height</item>
+    </style>
+
+    <style name="inke_search_titlebar_back" parent="@style/inke_titlebar_back">
+        <item name="android:paddingLeft">@dimen/searchbar_padding_l_r</item>
+        <item name="android:paddingTop">@dimen/searchbar_padding_t_b</item>
+        <item name="android:paddingRight">@dimen/searchbar_padding_l_r</item>
+        <item name="android:paddingBottom">@dimen/searchbar_padding_t_b</item>
+    </style>
+
+    <style name="inke_titlebar_back">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_width">@dimen/titlebar_back_width</item>
+        <item name="android:layout_height">@dimen/titlebar_back_width</item>
+        <item name="android:src">@drawable/inke_title_button_back</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="inke_cell_search_editcontainer" parent="@style/inke_match_wrap">
+        <item name="android:background">@drawable/inke_round_58_50</item>
+        <item name="android:layout_height">@dimen/searchbar_height</item>
+    </style>
+
+    <style name="head_search_editcontainer" parent="@style/inke_cell_search_editcontainer">
+        <item name="android:background">@drawable/inke_round_main</item>
+        <item name="android:layout_height">@dimen/searchbar_height</item>
+    </style>
+
+    <style name="weight_length_horizontal">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="cell_search_searchicon_main" parent="@style/weight_length_horizontal">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">@dimen/searchbar_height</item>
+        <item name="android:layout_height">@dimen/user_item_portrait_width</item>
+        <item name="android:src">@drawable/title_button_search_p</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="cell_search_edittext_main" parent="@style/inke_match_match">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffcbd3d7</item>
+        <item name="android:textColorHint">#ffcbd3d7</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="cell_search_btn_del_main">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">@dimen/searchbar_height</item>
+        <item name="android:layout_height">@dimen/user_item_portrait_width</item>
+        <item name="android:src">@drawable/login_clear</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="cell_search_btn_search">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/inke_color_80</item>
+        <item name="android:background">@drawable/bg_search_button</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="head_search_btn_search" parent="@style/cell_search_btn_search">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">@dimen/searchbar_padding_l_r</item>
+        <item name="android:paddingRight">@dimen/searchbar_padding_l_r</item>
+    </style>
+
 </resources>

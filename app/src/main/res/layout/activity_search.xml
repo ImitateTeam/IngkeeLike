@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.live.ingkeelike.ui.search.activity.SearchActivity">
+
+    <RelativeLayout
+        style="@style/inke_titlebar_container"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            style="@style/inke_search_titlebar_back"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/head_search_btn_search"
+            android:layout_alignParentRight="true"
+            android:text="@string/global_cancel" />
+
+        <RelativeLayout
+            android:id="@+id/ly_search_head"
+            style="@style/head_search_editcontainer"
+            android:layout_width="@dimen/search_text_width"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_item_portrait_margin_l"
+            android:layout_marginRight="5.0dip"
+            android:layout_toLeftOf="@id/btn_cancel">
+
+            <ImageButton
+                android:id="@+id/btn_searchicon"
+                style="@style/cell_search_searchicon_main"
+                android:contentDescription="@string/app_name" />
+
+            <ImageButton
+                android:id="@+id/btn_del"
+                style="@style/cell_search_btn_del_main"
+                android:contentDescription="@string/app_name" />
+
+            <EditText
+                android:id="@+id/edit"
+                style="@style/cell_search_edittext_main"
+                android:layout_toLeftOf="@id/btn_del"
+                android:layout_toRightOf="@id/btn_searchicon"
+                android:hint="@string/userhome_searchfriend_hint" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_search"
+            style="@style/head_search_btn_search"
+            android:text="@string/userhome_search"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

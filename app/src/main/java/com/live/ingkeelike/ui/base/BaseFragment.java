@@ -48,6 +48,8 @@ public abstract class BaseFragment<T extends BasePresenter, E extends BaseModel>
     public abstract void initPresenter();
     //初始化view
     protected abstract void initView();
+    //初始化view
+    protected abstract void initData();
 
     @Override
     public void onDestroyView() {
