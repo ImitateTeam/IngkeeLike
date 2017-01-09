@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="inke_color_58">#ff00c8ba</color>
+    <color name="inke_color_80">#fff4378b</color>
 </resources>

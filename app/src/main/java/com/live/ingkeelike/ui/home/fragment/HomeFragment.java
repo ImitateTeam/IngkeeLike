@@ -40,10 +40,9 @@ public class HomeFragment extends BaseFragment {
 
     @Override
     protected void initView() {
-        initData();
     }
 
-    private void initData() {
+    protected void initData() {
         for (int i = 0; i < titles.length; i++) {
             fragments.add(SimpleFragment.newInstance(titles[i]));
         }

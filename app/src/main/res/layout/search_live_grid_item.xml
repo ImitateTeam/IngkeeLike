@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="125.0dip"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_portrait"
+        android:layout_width="125.0dip"
+        android:layout_height="125.0dip"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        fresco:placeholderImage="@drawable/default_room"
+        fresco:roundedCornerRadius="8.0dip" />
+
+    <TextView
+        android:id="@+id/txt_count"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7.5dip"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/tv_search_live_look_count" />
+</LinearLayout>
