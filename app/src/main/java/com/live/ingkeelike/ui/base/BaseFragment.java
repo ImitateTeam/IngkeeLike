@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.live.ingkeelike.manager.RxManager;
 import com.live.ingkeelike.util.ClassUtil;
@@ -37,8 +38,9 @@ public abstract class BaseFragment<T extends BasePresenter, E extends BaseModel>
         if(mPresenter!=null){
             mPresenter.mContext=this.getActivity();
         }
-        initPresenter();
         initView();
+        initPresenter();
+        initData();
         return rootView;
     }
 
@@ -48,7 +50,7 @@ public abstract class BaseFragment<T extends BasePresenter, E extends BaseModel>
     public abstract void initPresenter();
     //初始化view
     protected abstract void initView();
-    //初始化view
+    //初始化数据
     protected abstract void initData();
 
     @Override
@@ -60,5 +62,18 @@ public abstract class BaseFragment<T extends BasePresenter, E extends BaseModel>
         mRxManager.clear();
     }
 
+    /**
+     * Toast方法，可覆盖前一次toast
+     */
+    Toast mToast = null;
+    public void showToast(String text) {
+        if (mToast != null && !super.getActivity().isFinishing()) {
+            mToast.setText(text);
+            mToast.show();
+            return;
+        }
+        mToast = Toast.makeText(context, text, Toast.LENGTH_SHORT);
+        mToast.show();
+    }
 
 }

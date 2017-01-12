@@ -36,11 +36,11 @@ public class SimpleFragment extends BaseFragment{
 
     @Override
     protected void initView() {
-        content_tv.setText(mContent);
+
     }
 
     @Override
     protected void initData() {
-
+        content_tv.setText(mContent);
     }
 }

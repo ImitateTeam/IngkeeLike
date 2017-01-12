@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 组件内，页边空白区域（最大：90dp） -->
+    <dimen name="margin_biggest">90dp</dimen>
+    <!-- 组件内，页边空白区域（较大：20dp） -->
+    <dimen name="margin_bigger">20dp</dimen>
+    <!-- 组件内，页边空白区域（大：15dp） -->
+    <dimen name="margin_big">15dp</dimen>
+    <!-- 组件内，页边空白区域（中：10dp） -->
+    <dimen name="margin_medium">10dp</dimen>
+    <!-- 组件内，页边空白区域（标准：8dp） -->
+    <dimen name="margin_normal">8dp</dimen>
+    <!-- 组件内，页边空白区域（稍小：6dp） -->
+    <dimen name="margin_normal_smaller">6dp</dimen>
+    <!-- 组件内，页边空白区域（小：4dp） -->
+    <dimen name="margin_small">4dp</dimen>
+    <!-- 组件内，页边空白区域（较小：4dp） -->
+    <dimen name="margin_smaller">2dp</dimen>
+
+    <!-- 组件间的空白区域：（最大：30dp） -->
+    <dimen name="padding_largest">30dp</dimen>
+    <!-- 组件间的空白区域：（更大：20dp） -->
+    <dimen name="padding_large">20dp</dimen>
+    <!-- 组件间的空白区域：（大：16dp） -->
+    <dimen name="padding_big">16dp</dimen>
+    <!-- 组件间的空白区域：（标准较大：12dp） -->
+    <dimen name="padding_normal_bigger">12dp</dimen>
+    <!-- 组件间的空白区域：（中：10dp） -->
+    <dimen name="padding_medium">10dp</dimen>
+    <!-- 组件间的空白区域：（标准：8dp） -->
+    <dimen name="padding_normal">8dp</dimen>
+    <!-- 组件间的空白区域：（标准（较小）：6dp） -->
+    <dimen name="padding_normal_smaller">6dp</dimen>
+    <!-- 组件间的空白区域：（小：4dp） -->
+    <dimen name="padding_small">4dp</dimen>
+    <!-- 组件间的空白区域：（较小：2dp） -->
+    <dimen name="padding_smaller">2dp</dimen>
+
+    <!-- 应用的字体：（较大：20） -->
+    <dimen name="fs_biger">20.0sp</dimen>
+    <!-- 应用的字体：（大：18） -->
+    <dimen name="fs_big">18.0sp</dimen>
+    <!-- 应用的字体：（标准:16） -->
+    <dimen name="fs_normal">16.0sp</dimen>
+    <!-- 应用的字体：（小：14） -->
+    <dimen name="fs_small">14.0sp</dimen>
+    <!-- 应用的字体：（小：14） -->
+    <dimen name="fs_smaller">12.0sp</dimen>
+
+    <!-- 列表元素之间的分割线高度（小：0.5dip） -->
+    <dimen name="lv_divider_height_small">0.5dip</dimen>
+    <!-- 列表元素之间的分割线高度（标准：1dip） -->
+    <dimen name="lv_divider_height_normal">1dip</dimen>
+</resources>
