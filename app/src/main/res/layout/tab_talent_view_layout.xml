@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/rl_container"
+    android:id="@+id/rl_container"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/inke_color_68">
+    android:background="#fff0f0f0">
 
     <com.meelive.ingkee.tab.view.InkeTabLoadingView
-        android:id="@id/inke_tab_loading"
+        android:id="@+id/inke_tab_loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />
 
     <RelativeLayout
-        android:id="@id/container"
+        android:id="@+id/container"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
         <com.meelive.ingkee.ui.refresh.InkePullToRefresh
-            android:id="@id/pull_refresh_hall_recent"
+            android:id="@+id/pull_refresh_hall_recent"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
 
@@ -29,7 +29,7 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@id/list_emptyview"
+        android:id="@+id/list_emptyview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -38,8 +38,8 @@
         android:visibility="visible">
 
         <ImageView
-            android:layout_width="@dimen/dimens_dip_120"
-            android:layout_height="@dimen/dimens_dip_120"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:contentDescription="@string/app_name"
             android:scaleType="fitXY"
             android:src="@drawable/default_video" />
@@ -47,10 +47,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/dimens_dip_20"
-            android:paddingRight="@dimen/dimens_dip_20"
-            android:text="@string/userhome_hall_nocontent_tip"
-            android:textColor="@color/inke_color_104"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="全世界都在等待你的直播"
+            android:textColor="#ffaeaeae"
             android:textSize="14.0sp" />
     </LinearLayout>
 </RelativeLayout>
