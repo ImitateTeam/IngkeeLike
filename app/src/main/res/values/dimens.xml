@@ -24,4 +24,6 @@
     <dimen name="tv_cate_title_size">15.0dip</dimen>
     <dimen name="tv_search_live_user_name_size">16.0dip</dimen>
     <dimen name="diveder_line_height">1.0px</dimen>
+
+
 </resources>

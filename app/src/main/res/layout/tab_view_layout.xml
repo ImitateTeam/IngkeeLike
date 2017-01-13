@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/inke_color_68">
+
+    <com.meelive.ingkee.widget.InkeLoadingView
+        android:id="@id/inke_hot_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <com.meelive.ingkee.v1.ui.widget.refreshlistview.PullToRefreshListView
+        android:id="@id/listview"
+        style="@style/listview_base"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@color/inke_color_29"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@id/list_emptyview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/dimens_dip_120"
+            android:layout_height="@dimen/dimens_dip_120"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_video" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimens_dip_20"
+            android:paddingRight="@dimen/dimens_dip_20"
+            android:text="@string/userhome_hall_nocontent_tip"
+            android:textColor="@color/inke_color_104"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+</RelativeLayout>
