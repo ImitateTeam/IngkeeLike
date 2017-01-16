@@ -42,7 +42,10 @@ dependencies {
     //view注解
     compile 'com.facebook.fresco:fresco:1.0.0'
     compile project(':appframe')
+    // 七牛直播相关
     compile files('libs/pldroid-player-1.4.1.jar')
     compile 'com.qiniu:happy-dns:0.2.+'
     compile 'com.qiniu.pili:pili-android-qos:0.8.+'
+    // 竖向滑动ViewPager
+    compile 'com.github.castorflex.verticalviewpager:library:19.0.1'
 }

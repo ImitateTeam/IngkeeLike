@@ -1,5 +1,8 @@
 package com.live.ingkeelike.ui.home.fragment.hotfragment.view;
 
+import android.content.Intent;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
@@ -8,6 +11,7 @@ import com.live.ingkeelike.ui.base.BaseFragment;
 import com.live.ingkeelike.ui.home.fragment.hotfragment.adapter.HotListAdapter;
 import com.live.ingkeelike.ui.home.fragment.hotfragment.presenter.HotPresenter;
 import com.live.ingkeelike.ui.home.fragment.hotfragment.presenter.IHotPresenter;
+import com.live.ingkeelike.ui.live.activity.LiveActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,7 +54,22 @@ public class HotFragment extends BaseFragment implements IHotView {
 
         hotListAdapter = new HotListAdapter(context, hotlist);
         hot_lv.setAdapter(hotListAdapter);
+        hot_lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent= new Intent(getActivity(), LiveActivity.class);
+                startActivity(intent);
+            }
+        });
 
+
+//                new () {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent= new Intent(getActivity(), LiveActivity.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 
     @Override
