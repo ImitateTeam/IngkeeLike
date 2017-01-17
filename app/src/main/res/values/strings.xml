@@ -4,4 +4,12 @@
     <string name="home_label">首页</string>
 
     <string name="login_label">登录页</string>
+
+    <!--global-->
+    <string name="global_cancel">取消</string>
+
+    <!--search-->
+    <string name="userhome_searchfriend_hint">请输入昵称/映客号</string>
+    <string name="userhome_search">搜索</string>
+    <string name="userhome_nickname_default">Garfield00</string>
 </resources>

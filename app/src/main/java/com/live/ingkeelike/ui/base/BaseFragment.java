@@ -38,6 +38,7 @@ public abstract class BaseFragment<T extends BasePresenter, E extends BaseModel>
             mPresenter.mContext=this.getActivity();
         }
         initPresenter();
+        initData();
         initView();
         return rootView;
     }
@@ -48,6 +49,8 @@ public abstract class BaseFragment<T extends BasePresenter, E extends BaseModel>
     public abstract void initPresenter();
     //初始化view
     protected abstract void initView();
+    //初始化数据
+    protected abstract void initData();
 
     @Override
     public void onDestroyView() {
