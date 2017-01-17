@@ -93,6 +93,7 @@ public class HomeActivity extends BaseActivity {
                     case R.id.mine_rbtn:
                         position = Constants.HomeActivityContants.MINE_POSITION;
                         break;
+
                     default:
                         break;
                 }

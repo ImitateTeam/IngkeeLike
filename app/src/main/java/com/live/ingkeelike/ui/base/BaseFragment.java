@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -70,10 +71,12 @@ public abstract class BaseFragment<T extends BasePresenter, E extends BaseModel>
     public void showToast(String text) {
         if (mToast != null && !super.getActivity().isFinishing()) {
             mToast.setText(text);
+            mToast.setGravity(Gravity.TOP,0,0);
             mToast.show();
             return;
         }
         mToast = Toast.makeText(context, text, Toast.LENGTH_SHORT);
+        mToast.setGravity(Gravity.TOP,0,0);
         mToast.show();
     }
 
