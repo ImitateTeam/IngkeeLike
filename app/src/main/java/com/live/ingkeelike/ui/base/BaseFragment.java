@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.live.ingkeelike.manager.RxManager;
 import com.live.ingkeelike.util.ClassUtil;
@@ -61,5 +62,19 @@ public abstract class BaseFragment<T extends BasePresenter, E extends BaseModel>
         mRxManager.clear();
     }
 
+    Toast mToast = null;
+    /**
+     * toast方法
+     * @param text
+     */
+    public void showToast(String text) {
+        if (mToast != null && !super.getActivity().isFinishing()) {
+            mToast.setText(text);
+            mToast.show();
+            return;
+        }
+        mToast = Toast.makeText(context, text, Toast.LENGTH_SHORT);
+        mToast.show();
+    }
 
 }
