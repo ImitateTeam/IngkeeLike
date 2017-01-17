@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleLayout">
+        <attr name="title_txt" format="string" />
+        <attr name="rightTitle_txt" format="string" />
+        <attr name="hasBack" format="boolean" />
+    </declare-styleable>
+
+</resources>

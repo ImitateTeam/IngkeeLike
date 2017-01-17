@@ -8,7 +8,6 @@ import com.live.ingkeelike.R;
 import com.live.ingkeelike.ui.base.BaseFragment;
 import com.live.ingkeelike.ui.base.BaseFragmentAdapter;
 import com.live.ingkeelike.ui.home.fragment.hotfragment.view.HotFragment;
-import com.live.ingkeelike.ui.home.fragment.nearbyfragment.view.NearbyFragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -50,9 +49,8 @@ public class HomeFragment extends BaseFragment {
 
         //添加热门页
         fragments.add(new HotFragment());
-        //添加附近页
-        fragments.add(new NearbyFragment());
 
+        fragments.add(SimpleFragment.newInstance(titles[2]));
         fragments.add(SimpleFragment.newInstance(titles[3]));
         fragments.add(SimpleFragment.newInstance(titles[4]));
 
