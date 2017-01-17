@@ -28,8 +28,8 @@ public abstract class BaseActivity<T extends BasePresenter, E extends BaseModel>
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         doBeforeSetcontentView();
+        super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
         ButterKnife.bind(this);
         mContext = this;

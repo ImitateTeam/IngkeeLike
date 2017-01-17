@@ -3,4 +3,5 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="home_actvity_tab_height">58dp</dimen>
+    <dimen name="text_15_sp">15sp</dimen>
 </resources>
