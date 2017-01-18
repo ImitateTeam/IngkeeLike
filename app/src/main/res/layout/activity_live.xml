@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.live.ingkeelike.ui.live.activity.LiveActivity">
 
-    <com.pili.pldroid.player.widget.PLVideoTextureView
-        android:id="@+id/video_live"
+    <fr.castorflex.android.verticalviewpager.VerticalViewPager
+        android:id="@+id/vertical_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </RelativeLayout>
