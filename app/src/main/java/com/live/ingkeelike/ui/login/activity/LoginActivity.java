@@ -1,6 +1,7 @@
 package com.live.ingkeelike.ui.login.activity;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -59,7 +60,7 @@ public class LoginActivity extends BaseActivity<LoginPresenter, LoginModel> impl
 
     @Override
     public void requestError() {
-
+        Log.e("wangyixia","first commit");
     }
 
     @Override
