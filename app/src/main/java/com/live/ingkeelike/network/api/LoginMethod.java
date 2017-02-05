@@ -44,14 +44,7 @@ public class LoginMethod extends BaseMethod{
 
     @Nullable
     private LoginApi getLoginApi(){
-        try{
             return getRetrofit(getBaseUrl()).create(LoginApi.class);
-        }catch (IOException e){
-            e.printStackTrace();
-        }catch (ClassNotFoundException e2){
-            e2.printStackTrace();
-        }
-        return null;
 
     }
 

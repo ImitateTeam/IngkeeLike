@@ -44,14 +44,7 @@ public class MainMethod extends BaseMethod{
 
     @Nullable
     private MainAPi getMainApi(){
-        try{
             return getRetrofit(getBaseUrl()).create(MainAPi.class);
-        }catch (IOException e){
-            e.printStackTrace();
-        }catch (ClassNotFoundException e2){
-            e2.printStackTrace();
-        }
-        return null;
 
     }
 

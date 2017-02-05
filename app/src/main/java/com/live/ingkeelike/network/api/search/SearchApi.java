@@ -11,7 +11,7 @@ import rx.Observable;
  * Created by Administrator on 2017/1/8.
  */
 
-interface SearchAPI {
+interface SearchApi {
     /**
      * 搜索用户、直播
      * @param target

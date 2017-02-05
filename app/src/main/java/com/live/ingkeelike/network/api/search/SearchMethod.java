@@ -32,15 +32,8 @@ public class SearchMethod extends BaseMethod{
     }
 
     @Nullable
-    private SearchAPI getSearchAPI(){
-        try{
-            return getRetrofit(getBaseUrl()).create(SearchAPI.class);
-        }catch (IOException e){
-            e.printStackTrace();
-        }catch (ClassNotFoundException e2){
-            e2.printStackTrace();
-        }
-        return null;
+    private SearchApi getSearchAPI(){
+            return getRetrofit(getBaseUrl()).create(SearchApi.class);
     }
 
     /**

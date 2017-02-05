@@ -1,5 +1,6 @@
 package com.live.ingkeelike.manager;
 
+
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -15,37 +16,42 @@ import okhttp3.logging.HttpLoggingInterceptor;
 
 public class OkHttpManager {
 
-    private static OkHttpClient singleton;
-    public static OkHttpClient getInstance() throws IOException, ClassNotFoundException {
+    private static OkHttpManager singleton;
+    public static OkHttpManager getInstance(){
         if (singleton == null) {
             synchronized (OkHttpManager.class) {
                 if (singleton == null) {
-                    HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
-                    interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-                    singleton = new OkHttpClient.Builder()
-                            .addInterceptor(interceptor)
-                            .addInterceptor(new Interceptor() {
-                                @Override
-                                public Response intercept(Chain chain) throws IOException {
-
-                                    Request request = chain.request();
-                                    request = request.newBuilder()
-                                            .addHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
-                                            .addHeader("Accept-Encoding", "gzip, deflate")
-                                            .addHeader("Connection", "keep-alive")
-                                            .addHeader("accept", "application/json")
-                                            .build();
-                                    return chain.proceed(request);
-                                }
-                            })
-                            .retryOnConnectionFailure(true)
-                            .connectTimeout(15, TimeUnit.SECONDS)
-                            .build();
-
+                    singleton = new OkHttpManager();
                 }
             }
         }
         return singleton;
+    }
+
+    public OkHttpClient getOkhttp(){
+        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+        OkHttpClient client = new OkHttpClient.Builder()
+                .retryOnConnectionFailure(true)
+                .connectTimeout(15, TimeUnit.SECONDS)
+                .addInterceptor(interceptor)
+                .addInterceptor(new Interceptor() {
+                    @Override
+                    public Response intercept(Chain chain) throws IOException {
+
+                        Request request = chain.request();
+                        request = request.newBuilder()
+                                .header("Content-Type", "application/json")
+                                .header("Accept-Encoding", "gzip,deflate")
+                                .header("Charset", "UTF-8")
+                                .header("Accept", "application/json")
+                                .method(request.method(), request.body())
+                                .build();
+                        return chain.proceed(request);
+                    }
+                })
+                .build();
+        return client;
     }
 
 
