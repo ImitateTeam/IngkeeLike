@@ -56,9 +56,8 @@ public class MainMethod extends BaseMethod{
     public Subscription getListDatas(MainBean bean, Subscriber<String> subscriber){
         return getMainApi().getListDatas(bean)
                 .subscribeOn(Schedulers.io())
-                .subscribeOn(AndroidSchedulers.mainThread())
+                .unsubscribeOn(Schedulers.io())
                 .map(new HttpFun())
-                .subscribeOn(AndroidSchedulers.mainThread())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);
     }

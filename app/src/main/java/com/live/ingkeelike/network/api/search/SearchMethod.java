@@ -44,9 +44,8 @@ public class SearchMethod extends BaseMethod{
     public Subscription searchLiveOrUser(String target, Subscriber<String> subscriber){
         return getSearchAPI().searchLiveOrUser(target)
                 .subscribeOn(Schedulers.io())
-                .subscribeOn(AndroidSchedulers.mainThread())
+                .unsubscribeOn(Schedulers.io())
                 .map(new HttpFun())
-                .subscribeOn(AndroidSchedulers.mainThread())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);
     }
@@ -58,9 +57,8 @@ public class SearchMethod extends BaseMethod{
     public Subscription recommendLiveOrUser(Subscriber<String> subscriber){
         return getSearchAPI().recommendLiveOrUser()
                 .subscribeOn(Schedulers.io())
-                .subscribeOn(AndroidSchedulers.mainThread())
+                .unsubscribeOn(Schedulers.io())
                 .map(new HttpFun())
-                .subscribeOn(AndroidSchedulers.mainThread())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(subscriber);
     }
